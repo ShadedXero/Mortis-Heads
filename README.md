@@ -1,2 +1,2 @@
 # MortisHeads
-Allows you to create custom textured heads with custom potion effects
+Allows you to create custom heads which gives potion effects upon wearing!
