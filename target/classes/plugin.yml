@@ -1,0 +1,8 @@
+name: MortisHeads
+version: '1.2'
+main: me.none030.mortisheads.MortisHeads
+api-version: 1.13
+softdepend: [CrackShot]
+commands:
+  mortisheads:
+    aliases: [customheads]

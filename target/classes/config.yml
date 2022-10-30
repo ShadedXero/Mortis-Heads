@@ -1,0 +1,41 @@
+heads:
+  NOTCH: #Head-ID
+    name: "&aNotch" #The display name of the Head. #Use "&" for color codes.
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU2MDc2MzI4N2E3Zjk4NzE1MmMxYTM3NDA4Y2JmMzRlYmNlMDg0YzM3MTM2NmFmMmE3M2Y3ZjY5Mzc3ZDk3OSJ9fX0=
+    lore: #The lore of the Head.
+      - "&7Notch Head"
+    enchants: #https://helpch.at/docs/1.18.2/org/bukkit/enchantments/Enchantment.html
+      - PROTECTION_ENVIRONMENTAL:4
+    flags: #https://helpch.at/docs/1.12.2/index.html?org/bukkit/inventory/ItemFlag.html
+      - HIDE_ENCHANTS
+    effects:
+      NIGHT_VISION: #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+        duration: 10 #This option is to avoid the screen flickering when potion effect like night vision is running out although every potion effect is for infinite time until the head is unworn.
+        amplifier: 0 #The amplifier of this effect.
+        ambient: true #Wheather to make potion effect produce more, translucent, particles.
+        particles: true #Wheather to show particles.
+        icon: true #Wheather to show icon of the potion effect on client.
+      FIRE_RESISTANCE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true #Wheather the wearer of this head keeps this head after dying.
+  JAWA:
+    name: "&cJawa"
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGQ5MTdiNTFlNDYyMzA1Yzc3NjczNTM3MGQ4MmQ3MmNmOTU5Njg1MmRmMWM0YmI5ODNmMmViMDIwYTRlNjg1NyJ9fX0=
+    effects:
+      NIGHT_VISION:
+        duration: 10
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+      FIRE_RESISTANCE:
+        duration: 3
+        amplifier: 0
+        ambient: true
+        particles: true
+        icon: true
+    stays-on-after-death: true
