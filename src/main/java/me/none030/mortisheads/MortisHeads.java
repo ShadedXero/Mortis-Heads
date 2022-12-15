@@ -1,32 +1,39 @@
 package me.none030.mortisheads;
 
-import me.none030.mortisheads.commands.MortisHeadCommand;
-import me.none030.mortisheads.events.GunsEvent;
-import me.none030.mortisheads.events.MortisHeadsEvents;
-import org.bukkit.plugin.Plugin;
+import me.none030.mortisheads.head.HeadManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import static me.none030.mortisheads.methods.SavingFiles.SaveFiles;
 
 public final class MortisHeads extends JavaPlugin {
 
-    public static Plugin plugin;
+    private static MortisHeads Instance;
+    private boolean crackShot = false;
+    private HeadManager headManager;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
-        getServer().getPluginCommand("mortisheads").setExecutor(new MortisHeadCommand());
-        getServer().getPluginManager().registerEvents(new MortisHeadsEvents(), this);
-        plugin = this;
-        SaveFiles();
-        boolean guns = getServer().getPluginManager().getPlugin("CrackShot") != null;
-        if (guns) {
-            getServer().getPluginManager().registerEvents(new GunsEvent(), this);
+        Instance = this;
+        if (getServer().getPluginManager().getPlugin("CrackShot") != null) {
+            crackShot = true;
         }
+        headManager = new HeadManager();
+
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+    }
+
+    public static MortisHeads getInstance() {
+        return Instance;
+    }
+
+    public boolean isCrackShot() {
+        return crackShot;
+    }
+
+    public HeadManager getHeadManager() {
+        return headManager;
     }
 }
