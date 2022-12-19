@@ -1,5 +1,6 @@
 package me.none030.mortisheads.head;
 
+import me.none030.mortisheads.MortisHeads;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -17,6 +18,8 @@ import static me.none030.mortisheads.head.HeadMessages.*;
 
 public class HeadCommand implements TabExecutor {
 
+    public MortisHeads plugin = MortisHeads.getInstance();
+
     private final HeadManager manager;
 
     public HeadCommand(HeadManager manager) {
@@ -25,6 +28,16 @@ public class HeadCommand implements TabExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
+
+        if (args.length == 1) {
+            if (args[0].equalsIgnoreCase("reload")) {
+                if (!sender.hasPermission("mortisheads.reload")) {
+                    sender.sendMessage(NO_PERMISSION);
+                    return false;
+                }
+                plugin.setHeadManager(new HeadManager());
+            }
+        }
 
         if (args.length == 6) {
             if (args[0].equalsIgnoreCase("drop")) {

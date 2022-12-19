@@ -17,12 +17,6 @@ public final class MortisHeads extends JavaPlugin {
             crackShot = true;
         }
         headManager = new HeadManager();
-
-    }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
     }
 
     public static MortisHeads getInstance() {
@@ -35,5 +29,9 @@ public final class MortisHeads extends JavaPlugin {
 
     public HeadManager getHeadManager() {
         return headManager;
+    }
+
+    public void setHeadManager(HeadManager headManager) {
+        this.headManager = headManager;
     }
 }

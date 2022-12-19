@@ -1,5 +1,5 @@
 name: MortisHeads
-version: '1.3'
+version: '2.0'
 main: me.none030.mortisheads.MortisHeads
 api-version: 1.13
 softdepend: [CrackShot]
