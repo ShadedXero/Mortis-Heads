@@ -13,11 +13,11 @@ public class HeadManager {
     public MortisHeads plugin = MortisHeads.getInstance();
 
     private ConfigManager configManager;
-    private final List<String> headIds;
-    private final List<Head> heads;
+    private List<String> headIds;
+    private List<Head> heads;
 
-    private final HashMap<ItemStack, Head> headByItem;
-    private final HashMap<String, Head> headById;
+    private HashMap<ItemStack, Head> headByItem;
+    private HashMap<String, Head> headById;
 
     public HeadManager() {
         headIds = new ArrayList<>();
@@ -31,6 +31,14 @@ public class HeadManager {
         if (plugin.isCrackShot()) {
             plugin.getServer().getPluginManager().registerEvents(new CrackShotListener(this), plugin);
         }
+    }
+
+    public void reload() {
+        headIds = new ArrayList<>();
+        heads = new ArrayList<>();
+        headByItem = new HashMap<>();
+        headById = new HashMap<>();
+        configManager = new ConfigManager(this);
     }
 
     public List<String> getHeadIds() {

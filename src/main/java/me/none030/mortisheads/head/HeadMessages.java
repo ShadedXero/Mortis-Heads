@@ -8,4 +8,5 @@ public class HeadMessages {
     public static String INVALID_HEAD = colorMessage("&cPlease input a valid head id");
     public static String INVALID_WORLD = colorMessage("&cPlease input a valid world");
     public static String INVALID_TARGET = colorMessage("&cThe target does not exist");
+    public static String RELOAD = colorMessage("&aSuccessfully Reloaded");
 }

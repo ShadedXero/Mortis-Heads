@@ -35,7 +35,8 @@ public class HeadCommand implements TabExecutor {
                     sender.sendMessage(NO_PERMISSION);
                     return false;
                 }
-                plugin.setHeadManager(new HeadManager());
+                manager.reload();
+                sender.sendMessage(RELOAD);
             }
         }
 
