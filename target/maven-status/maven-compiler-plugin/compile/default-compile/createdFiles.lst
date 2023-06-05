@@ -7,6 +7,7 @@ me\none030\mortisheads\utils\MessageUtils.class
 me\none030\mortisheads\manager\HeadCommand.class
 me\none030\mortisheads\armorequipevent\ArmorEquipEvent.class
 me\none030\mortisheads\manager\MainManager.class
+me\none030\mortisheads\heads\WeaponMechanicsListener$1.class
 me\none030\mortisheads\heads\WeaponMechanicsListener.class
 me\none030\mortisheads\config\ConfigManager.class
 me\none030\mortisheads\manager\Manager.class
