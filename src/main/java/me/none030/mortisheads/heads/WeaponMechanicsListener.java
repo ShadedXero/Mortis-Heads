@@ -1,22 +1,22 @@
 package me.none030.mortisheads.heads;
 
-import com.shampaggon.crackshot.events.WeaponScopeEvent;
+import me.deecaad.weaponmechanics.weapon.weaponevents.WeaponScopeEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
-public class CrackShotListener implements Listener {
+public class WeaponMechanicsListener implements Listener {
 
     private final HeadManager headManager;
 
-    public CrackShotListener(HeadManager headManager) {
+    public WeaponMechanicsListener(HeadManager headManager) {
         this.headManager = headManager;
     }
 
     @EventHandler
     public void onScope(WeaponScopeEvent e) {
-        Player player = e.getPlayer();
-        if (e.isZoomIn()) {
+        Player player = (Player) e.getShooter();
+        if (e.getScopeType().equals(WeaponScopeEvent.ScopeType.IN)) {
             headManager.getScoping().add(player);
         }else {
             headManager.getScoping().remove(player);

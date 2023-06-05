@@ -37,8 +37,10 @@ public class Head {
         BukkitTask task = new BukkitRunnable() {
             @Override
             public void run() {
-                if (headManager.getHead(player.getInventory().getHelmet()) != null) {
-                    cancel();
+                if (!headManager.getScoping().contains(player)) {
+                    if (headManager.getHead(player.getInventory().getHelmet()) != null) {
+                        cancel();
+                    }
                 }
                 for (PotionEffect effect : effects) {
                     player.addPotionEffect(effect);

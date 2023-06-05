@@ -7,20 +7,25 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class HeadManager extends Manager {
 
     private final HashMap<String, Head> headById;
     private final HashMap<Player, Integer> taskIdByPlayer;
+    private final Set<Player> scoping;
 
     public HeadManager() {
         this.headById = new HashMap<>();
         this.taskIdByPlayer = new HashMap<>();
+        this.scoping = new HashSet<>();
         MortisHeads plugin = MortisHeads.getInstance();
         plugin.getServer().getPluginManager().registerEvents(new HeadListener(this), plugin);
         if (plugin.hasCrackShot()) {
             plugin.getServer().getPluginManager().registerEvents(new CrackShotListener(this), plugin);
+        }
+        if (plugin.hasWeaponMechanics()) {
+            plugin.getServer().getPluginManager().registerEvents(new WeaponMechanicsListener(this), plugin);
         }
     }
 
@@ -62,5 +67,9 @@ public class HeadManager extends Manager {
 
     public HashMap<Player, Integer> getTaskIdByPlayer() {
         return taskIdByPlayer;
+    }
+
+    public Set<Player> getScoping() {
+        return scoping;
     }
 }

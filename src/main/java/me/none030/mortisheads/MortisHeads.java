@@ -7,6 +7,7 @@ public final class MortisHeads extends JavaPlugin {
 
     private static MortisHeads Instance;
     private boolean crackShot;
+    private boolean weaponMechanics;
     private MainManager manager;
 
     @Override
@@ -14,6 +15,7 @@ public final class MortisHeads extends JavaPlugin {
         // Plugin startup logic
         Instance = this;
         crackShot = getServer().getPluginManager().getPlugin("CrackShot") != null;
+        weaponMechanics = getServer().getPluginManager().getPlugin("WeaponMechanics") != null;
         manager = new MainManager();
     }
 
@@ -23,6 +25,10 @@ public final class MortisHeads extends JavaPlugin {
 
     public boolean hasCrackShot() {
         return crackShot;
+    }
+
+    public boolean hasWeaponMechanics() {
+        return weaponMechanics;
     }
 
     public MainManager getManager() {
