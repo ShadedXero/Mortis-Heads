@@ -1,10 +1,20 @@
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\head\HeadListener.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\utils\ItemBuilder.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\head\HeadManager.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\head\HeadMessages.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\head\CrackShotListener.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\utils\MessageUtils.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\config\ConfigManager.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\head\HeadCommand.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\head\Head.java
-C:\Users\muham\Desktop\Mortis Heads\src\main\java\me\none030\mortisheads\MortisHeads.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\heads\HeadListener.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\manager\HeadCommand.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\manager\Manager.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\armorequipevent\ArmorType.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\heads\WeaponMechanicsListener.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\armorequipevent\ArmorEquipEvent.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\data\Data.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\armorequipevent\DispenserArmorListener.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\heads\HeadManager.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\manager\MainManager.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\config\ConfigManager.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\utils\ItemBuilder.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\config\MainConfig.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\armorequipevent\ArmorListener.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\data\ItemData.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\heads\Head.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\config\Config.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\MortisHeads.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\utils\MessageUtils.java
+F:\Java\Plugins\MortisHeads\src\main\java\me\none030\mortisheads\heads\CrackShotListener.java
