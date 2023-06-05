@@ -5,7 +5,7 @@ heads:
     lore: #The lore of the Head.
       - "&7Notch Head"
     enchants: #https://helpch.at/docs/1.18.2/org/bukkit/enchantments/Enchantment.html
-      - PROTECTION_ENVIRONMENTAL:4
+      - protection:4
     flags: #https://helpch.at/docs/1.12.2/index.html?org/bukkit/inventory/ItemFlag.html
       - HIDE_ENCHANTS
     effects:

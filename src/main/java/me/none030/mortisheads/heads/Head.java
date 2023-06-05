@@ -38,7 +38,7 @@ public class Head {
             @Override
             public void run() {
                 if (!headManager.getScoping().contains(player)) {
-                    if (headManager.getHead(player.getInventory().getHelmet()) != null) {
+                    if (headManager.getHead(player.getInventory().getHelmet()) == null) {
                         cancel();
                     }
                 }

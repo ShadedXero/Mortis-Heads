@@ -3,7 +3,6 @@ package me.none030.mortisheads.config;
 import me.none030.mortisheads.heads.Head;
 import me.none030.mortisheads.utils.ItemBuilder;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -68,7 +67,7 @@ public class MainConfig extends Config {
                 continue;
             }
             for (String potionEffect : effectSection.getKeys(false)) {
-                PotionEffectType type = PotionEffectType.getByKey(NamespacedKey.minecraft(potionEffect));
+                PotionEffectType type = PotionEffectType.getByName(potionEffect);
                 if (type == null) {
                     continue;
                 }

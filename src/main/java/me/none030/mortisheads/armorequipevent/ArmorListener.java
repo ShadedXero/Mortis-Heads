@@ -134,7 +134,7 @@ public class ArmorListener implements Listener{
             }
             ArmorType newArmorType = ArmorType.matchType(event.getItem());
             // Carved pumpkins cannot be equipped using right-click
-            if (event.getItem() != null && event.getItem().getType() == Material.CARVED_PUMPKIN) return;
+            if ((event.getItem() != null) && (event.getItem().getType().equals(Material.CARVED_PUMPKIN) || event.getItem().getType().equals(Material.PLAYER_HEAD))) return;
 
             if (newArmorType != null) {
                 ItemStack oldArmor = null;
