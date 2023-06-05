@@ -5,6 +5,7 @@ import me.none030.mortisheads.data.ItemData;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
@@ -43,6 +44,11 @@ public class Head {
                     }
                 }
                 for (PotionEffect effect : effects) {
+                    if (effect.getType().equals(PotionEffectType.SPEED)) {
+                        if (headManager.getScoping().contains(player)) {
+                            continue;
+                        }
+                    }
                     player.addPotionEffect(effect);
                 }
             }
