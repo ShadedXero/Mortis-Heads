@@ -1,37 +1,31 @@
 package me.none030.mortisheads;
 
-import me.none030.mortisheads.head.HeadManager;
+import me.none030.mortisheads.manager.MainManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MortisHeads extends JavaPlugin {
 
     private static MortisHeads Instance;
-    private boolean crackShot = false;
-    private HeadManager headManager;
+    private boolean crackShot;
+    private MainManager manager;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         Instance = this;
-        if (getServer().getPluginManager().getPlugin("CrackShot") != null) {
-            crackShot = true;
-        }
-        headManager = new HeadManager();
+        crackShot = getServer().getPluginManager().getPlugin("CrackShot") != null;
+        manager = new MainManager();
     }
 
     public static MortisHeads getInstance() {
         return Instance;
     }
 
-    public boolean isCrackShot() {
+    public boolean hasCrackShot() {
         return crackShot;
     }
 
-    public HeadManager getHeadManager() {
-        return headManager;
-    }
-
-    public void setHeadManager(HeadManager headManager) {
-        this.headManager = headManager;
+    public MainManager getManager() {
+        return manager;
     }
 }
