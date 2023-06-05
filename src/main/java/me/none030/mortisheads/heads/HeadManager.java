@@ -30,7 +30,7 @@ public class HeadManager extends Manager {
     }
 
     public Head getHead(ItemStack item) {
-        if (item == null) {
+        if (item == null || item.getType().isAir()) {
             return null;
         }
         String id = new ItemData(item.getItemMeta()).getId();
