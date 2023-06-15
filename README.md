@@ -3,4 +3,4 @@ Allows you to create custom heads which gives potion effects upon wearing!
 
 **Showcase:**
 
-https://www.youtube.com/watch?v=xSvwCp9RRck&t=29s
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
